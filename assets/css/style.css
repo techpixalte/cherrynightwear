@@ -16,12 +16,16 @@ a{
 img{
     height: auto;
 }
+ul{
+    list-style: none;
+}
 
 /* header */
 
 header{
     position: fixed;
     width: 100%;
+    z-index: 999;
     .top_nav{
         background: #d3305e;
         padding: 1rem 2.5rem;
@@ -117,7 +121,16 @@ section{
     height: 100vh;
 }
 
+.wrapper{
+    padding-top: 13.5rem;
+}
 
+
+.bannerSwiper{
+    img{
+        width: 100%;
+    }
+}
 
 /* animation */
 
@@ -138,11 +151,27 @@ section{
     }
 }
 
-
 @media screen and (max-width:540px) {
+    header .top_nav{
+        display: none;
+    }
     .hideHeader{
         .header_nav{
             transform: translateY(2rem);        
+        }
+    }
+    header{
+        .header_nav{
+            .menu{
+                position: absolute;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                top: 0;
+                height: 100vh;
+                left: -100%;
+                justify-content: center;
+            }
         }
     }
 }

@@ -13,3 +13,14 @@ document.addEventListener('scroll', e => {
   
     oldScroll = wTop;
   }, { passive: true });
+
+  var swiper = new Swiper(".bannerSwiper", {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+    });
