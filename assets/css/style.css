@@ -9,6 +9,7 @@
 /* reset */
 html{
     font-family: "Roboto Flex", sans-serif;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -18,6 +19,15 @@ img{
 }
 ul{
     list-style: none;
+}
+
+input, textarea, button{
+    appearance: none;
+    background: none;
+    border: none;
+    display: inline-block;
+    outline: none;
+    resize: none;
 }
 
 /* header */
@@ -63,15 +73,17 @@ header{
         }
     }
     .header_nav{
-        padding: 1rem 2.5rem;
+        padding: 1rem 5rem;
         background: #fff;
         display: flex;
         justify-content: space-between;
         align-items: center;
         transition: transform 0.5s ease-in;
         box-shadow: 0px 9px 14px -6px rgba(0,0,0,0.1);
-        img{
-            width: 7rem;
+        .logo{
+            img{
+                width: 7rem;
+            }
         }
         .menu{
             display: flex;
@@ -116,22 +128,288 @@ header{
 
 
 /* section */
-
-section{
-    height: 100vh;
-}
-
 .wrapper{
-    padding-top: 13.5rem;
 }
 
-
-.bannerSwiper{
-    img{
-        width: 100%;
+/* banner */
+.banner{
+    padding-top: 13.5rem;
+    .bannerSwiper{
+        img{
+            width: 100%;
+            display: block;
+        }
     }
 }
 
+
+/* about */
+
+.about_us{
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, rgba(211,48,94,1) 30%);
+    padding: 10rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    h2{
+        color: #fff !important;
+    }
+    .about_img{
+        width: 50rem;
+        height: 50rem;
+        background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(211,48,94,1) 50%);
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        left: -11.3%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .div_content{
+        color: #fff;
+        width: 75rem;
+        h2{
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+/* products */
+
+.our_products{
+    margin: 0rem 6.5rem 5rem;
+    padding-top: 10rem;
+    h2{
+        margin-bottom: 6rem;
+        text-align: center;
+    }
+    .product_title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h4{
+            font-size: 3.6rem;
+            color: #000;
+        }
+        a{
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+            color: rgba(0,0,0,0.5);
+            &:after {
+                content: "";
+                display: block;
+                margin: 0 auto;
+                width: 0;
+                height: .2rem;
+                background-color: #d3305e;
+                transition: opacity .3s ease,width .3s ease;
+            }
+            &:hover{
+                color: #d3305e;
+                &::after{
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .products_container{
+        margin-bottom: 10rem;
+        position: relative;
+        .swiper{
+            width: 95%;
+            margin: 3rem auto 0;
+            margin-left: 8rem;
+            .swiper-wrapper{
+            }
+            .product_items{
+                width: 25rem;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .swiper-prev, .swiper-next{
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            z-index: 99;
+            img{
+                width: 6.4rem;
+            }
+        }
+        .swiper-prev{
+            left: 0;
+            img{
+                transform: rotate(180deg);
+            }
+        }
+        .swiper-next{
+            right: 0;
+            left: auto;
+        }
+    }
+}
+
+/* Contact */
+
+.contact{
+    padding-top: 10rem;
+    h2{
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .contact_wrapper{
+        display: flex;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 60%, rgba(211,48,94,1) 60%);
+        .contact_info{
+            width: 60%;
+            padding: 5rem;
+            height: 100%;
+            form{
+                width: 75%;
+                margin: 0 auto;
+                input, textarea{
+                    width: 100%;
+                    border: 0.2rem solid rgba(0,0,0,0.5);
+                    border-radius: 1rem;
+                    padding: 1rem 2rem;
+                    display: block;
+                    font-size: 2rem;
+                    color: #d3305e;
+                    margin-bottom: 2.5rem;
+                    &::placeholder{
+                        font-size: 2rem;
+                        color: #d3305e;
+                    }
+                    &:focus-visible{
+                        border-color: #d3305e !important;
+                    }
+                }
+                button{
+                    border: 0.2rem solid rgba(0,0,0,0.5);
+                    padding: 1rem 2rem;
+                    border-radius: .5rem;
+                    font-size: 2rem;
+                    cursor: pointer;
+                    width: 10rem;
+                    display: block;
+                    margin: 0 auto;
+                    transition: background 0.3s ease-in;
+                    &:hover{
+                        background: #d3305e;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        address{
+            width: 40%;
+            padding: 5rem;
+            color: #fff;
+            text-align: center;
+            font-style: normal;
+            .address_title{
+                font-size: 4.8rem;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: .2rem;
+            }
+            .address_detail{
+                font-size: 3.2rem;
+                margin-bottom: 2.5rem;
+            }
+            .address_info{
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
+
+
+/* footer */
+
+footer{
+    background: #ff6893;
+    padding: 5rem 6.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    a{
+        color: #f9f9f9cd;
+        position: relative;
+        display: inline-block;
+        &:after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 0;
+            height: .2rem;
+            background-color: #f9f9f9cd;
+            transition: opacity .3s ease,width .3s ease;
+        }
+        &:hover{
+            &::after{
+                width: 100%;
+                opacity: 1;
+            }
+        }
+    }
+    .footer_content{
+        .footer_logo{
+            display: inline-block;
+            margin-bottom: 2rem;
+            &::after{
+                display: none !important;
+            }
+            img{
+                width: 10rem;
+            }
+        }
+        .footer_contact{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .footer_title{
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+        }
+        ul{
+            li{
+                a{
+                    font-size: 2.2rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+.swiper-button-disabled{
+    img{
+        opacity: .3;
+    }
+}
+
+.swiper-pagination-bullet{
+    background: #fff !important;
+}
+
+h2{
+    font-size: 6rem;
+    color: #d3305e;
+}
+p{
+    font-size: 2.4rem;
+}
 /* animation */
 
 @keyframes slideDown {
@@ -152,16 +430,25 @@ section{
 }
 
 @media screen and (max-width:540px) {
+    .wrapper {
+        padding-top: 9rem;
+    }
     header .top_nav{
         display: none;
     }
     .hideHeader{
         .header_nav{
-            transform: translateY(2rem);        
+            transform: translateY(0);
         }
     }
     header{
         .header_nav{
+            padding: 1rem 2rem;
+            .logo{
+                img{
+                    width: 5rem;
+                }
+            }
             .menu{
                 position: absolute;
                 flex-direction: column;
