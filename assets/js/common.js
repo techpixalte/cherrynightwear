@@ -38,7 +38,7 @@ document.addEventListener('scroll', e => {
           prevEl: ".swiper-prev-1",
         },
         breakpoints: {
-          414: {
+          320: {
           slidesPerView: 1,
           
         },
@@ -71,7 +71,7 @@ document.addEventListener('scroll', e => {
           prevEl: ".swiper-prev-2",
         },
         breakpoints: {
-          414: {
+          320: {
           slidesPerView: 1,
           
         },
@@ -104,7 +104,7 @@ document.addEventListener('scroll', e => {
           prevEl: ".swiper-prev-3",
         },
         breakpoints: {
-          414: {
+          320: {
           slidesPerView: 1,
           
         },
@@ -138,7 +138,7 @@ document.addEventListener('scroll', e => {
           prevEl: ".swiper-prev-4",
         },
         breakpoints: {
-          414: {
+          320: {
           slidesPerView: 1,
           
         },
@@ -169,7 +169,7 @@ document.addEventListener('scroll', e => {
           prevEl: ".swiper-prev-5",
         },
         breakpoints: {
-          414: {
+          320: {
           slidesPerView: 1,
           
         },
@@ -202,7 +202,7 @@ document.addEventListener('scroll', e => {
           prevEl: ".swiper-prev-6",
         },
         breakpoints: {
-          414: {
+          320: {
           slidesPerView: 1,
           
         },
@@ -235,7 +235,7 @@ document.addEventListener('scroll', e => {
           prevEl: ".swiper-prev-7",
         },
         breakpoints: {
-          414: {
+          320: {
           slidesPerView: 1,
           
         },
@@ -268,7 +268,7 @@ document.addEventListener('scroll', e => {
           prevEl: ".swiper-prev-8",
         },
         breakpoints: {
-          414: {
+          320: {
           slidesPerView: 1,
           
         },
@@ -301,7 +301,7 @@ document.addEventListener('scroll', e => {
           prevEl: ".swiper-prev-9",
         },
         breakpoints: {
-          414: {
+          320: {
           slidesPerView: 1,
           
         },
