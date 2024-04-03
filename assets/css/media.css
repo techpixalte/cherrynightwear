@@ -254,7 +254,7 @@
             .products_container{
                 margin-bottom: 35rem;
                 .swiper{
-                    /* margin-left: 4.5rem; */
+                    margin-left: 2.5rem;
                 }
                 .swiper-prev, .swiper-next {
                     bottom: -18rem;
