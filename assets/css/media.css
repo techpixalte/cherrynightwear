@@ -236,7 +236,7 @@
             }
         }
         .our_products .products_container .swiper .product_items {
-            width: 81rem;
+            width: 100%;
         }
         .our_products {
             padding-top: 24rem;
