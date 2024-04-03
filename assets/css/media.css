@@ -4,37 +4,355 @@
     }
 }
 
+@media screen and (max-width: 1715px) {
+    html{
+        font-size: 55.6%;
+    }
+}
+
 @media screen and (max-width: 1536px) {
     html{
-        font-size: 50%;
+        font-size: 47.9%;
+        .banner{
+            padding-top: 14.5rem;
+        }
     }
 }
 
 @media screen and (max-width: 1440px) {
     html{
-        font-size: 50%;
+        font-size: 46.8%;
     }
 }
 
 @media screen and (max-width: 1366px) {
     html{
-        font-size: 45%;
+        font-size: 44.5%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    html{
+        font-size: 41.6%;
+        .hideHeader .header_nav{
+            transform: translateY(-5.4rem);
+        }
     }
 }
 
 @media screen and (max-width: 1024px) {
     html{
-        font-size: 4px !important;
+        font-size: 33.3%;
+        .hideHeader{
+            .header_nav{
+                transform: translateY(-5.4rem);
+            }
+        }
+        .banner{
+            padding-top: 15.5rem;
+        }
+        .our_products{
+            .product_title{
+                width: 90%;
+                margin: 0 auto;
+                h4{
+                    font-size: 4rem;
+                }
+                a{
+                    font-size: 3rem;
+                }
+            }
+            .products_container{
+                .swiper{
+                    .product_items{
+                        width: 34rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 965px) {
+    html{
+        font-size: 31.3%;
+        .hideHeader{
+            .header_nav{
+                transform: translateY(-6.5rem);
+            }
+        }
+    }
+}
+@media screen and (max-width: 920px) {
+    html{
+        font-size: 29.7%;
+        .hideHeader{
+            .header_nav{
+                transform: translateY(-6.8rem);
+            }
+        }
     }
 }
 
 @media screen and (max-width: 768px) {
     html{
-        font-size: 8px !important;
+        font-size: 8px;
+        .hideHeader{
+            .header_nav{
+                transform: translateY(-4.8rem);
+            }
+        }
+        .about_us{
+            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, rgba(211,48,94,1) 20%);
+            .div_content{
+                width: 60rem;
+            }
+            .about_img{
+                width: 34rem;
+                height: 28rem;
+                left: -4rem;
+            }
+        }
+        .contact{
+            .contact_wrapper{
+                background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 55%, rgba(211,48,94,1) 55%);
+                .address_info{
+                    line-height: 1.2;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .our_products{
+            .product_title{
+                width: 90%;
+                margin: 0 auto;
+                h4{
+                    font-size: 4rem;
+                }
+                a{
+                    font-size: 3rem;
+                }
+            }
+            .products_container{
+                .swiper{
+                    margin-left: 5.5rem;
+                    .product_items{
+                        width: 32rem;
+                    }
+                }
+                .swiper-prev{
+                    left: -4rem;
+                }
+                .swiper-next{
+                    right: -4rem;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 540px) {
     html{
-        font-size: 62.5% !important;
+        font-size: 4px !important;
+        h2{
+            font-size: 9rem;
+        }
+        p{
+            font-size: 4.4rem;
+        }
+        .wrapper {
+            padding-top: 18.5rem;
+        }
+        .menu_icon{
+            display: block;
+            width: 12rem;
+            padding: 2rem;
+            svg{
+                width: 100%;
+            }
+        }
+        .banner{
+            padding-top: 0;
+        }
+        header .top_nav{
+            display: none;
+        }
+        .hideHeader{
+            .header_nav{
+                transform: translateY(0);
+            }
+        }
+        header{
+            .header_nav{
+                padding: 2rem 4rem;
+                .logo{
+                    img{
+                        width: 14rem;
+                    }
+                }
+                .menu{
+                    position: absolute;
+                    flex-direction: column;
+                    background: white;
+                    width: 100%;
+                    top: 0;
+                    height: 100vh;
+                    right: -100%;
+                    justify-content: center;
+                    transition: all 0.3s ease-in;
+                    z-index: 99;
+                    &.active{
+                        right: 0rem;
+                    }
+                    a{
+                        font-size: 12rem;
+                    }
+                    .close_icon{
+                        position: absolute;
+                        display: block;
+                        width: 15rem;
+                        padding: 2rem;
+                        top: 1rem;
+                        right: 1rem;
+                        svg{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .about_us{
+            background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 28%, rgba(211,48,94,1) 28%);
+            flex-direction: column;
+            padding-top: 24rem;
+            .about_img {
+                width: 50rem;
+                height: 50rem;
+                left: -2rem;
+                top: -3rem;
+                background: linear-gradient(0deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 50%, rgba(211,48,94,1) 50%);
+            }
+            .div_content{
+                width: 100%;
+            }
+        }
+        .our_products .products_container .swiper .product_items {
+            width: 81rem;
+        }
+        .our_products {
+            padding-top: 24rem;
+            .product_title {
+                h4 {
+                    font-size: 6rem;
+                }
+                a{
+                    font-size: 4rem;
+                }
+            }
+            h2{
+                margin-bottom: 10rem;
+            }
+            .products_container{
+                margin-bottom: 35rem;
+                .swiper{
+                    margin-left: 4.5rem;
+                }
+                .swiper-prev, .swiper-next {
+                    bottom: -18rem;
+                    top: auto;
+                    img {
+                        width: 10.4rem !important;
+                    }
+                }
+                .swiper-prev{
+                    left: 20%;
+                }
+                .swiper-next{
+                   right: 20% !important;
+               }
+            } 
+        }
+        .contact{
+            padding-top: 24rem;
+            .contact_wrapper{
+                background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 72%, rgba(211,48,94,1) 72%);
+                flex-direction: column;
+                .contact_info{
+                    width: 75%;
+                    padding: 12rem 0;
+                    form{
+                        width: 100%;
+                        input, textarea{
+                            font-size: 4rem;
+                            padding: 3rem;
+                            margin-bottom: 4rem;
+                            &::placeholder{
+                                font-size: 4rem;
+                            }
+                        }
+                        button{
+                            width: 24rem;
+                            padding: 2rem 3rem;
+                            font-size: 5rem;
+                        }
+                    }
+                }
+                address{
+                    width: 100%;
+                    padding: 9rem 5rem;
+                    .address_title{
+                        font-size: 6.8rem;
+                    }
+                    .address_detail{
+                        font-size: 5.2rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    .address_info{
+                        font-size: 4.8rem;
+                    }
+                }
+            }
+        }
+        footer{
+            .footer_box{
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 10rem;
+                .footer_content{
+                    .footer_logo{
+                        margin-bottom: 6rem;
+                        img{
+                            width: 50%;
+                            margin: 0 auto;
+                            display: block;
+                        }
+                    }
+                    .footer_contact{
+                        font-size: 5.5rem;
+                        margin-bottom: 4rem;
+                        text-align: center;
+    
+                    }
+                    &:nth-child(1){
+                        width: 100%;
+                    }
+                    .footer_title{
+                        font-size: 5.8rem;
+                        margin-bottom: 5rem;
+                    }
+                    ul{
+                        li{
+                            a{
+                                font-size: 4.2rem;
+                                margin-bottom: 4rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .web_creator{
+                font-size: 4rem;
+            }
+        }
     }
 }
+
