@@ -352,8 +352,8 @@ header{
 /* footer */
 
 footer{
-    background: #7a0023;
-    padding: 5rem 6.5rem;
+    background: #9b0024;
+    padding: 5rem 10.5rem;
     color: #fff;
     .footer_box{
         display: flex;
