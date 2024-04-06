@@ -285,7 +285,7 @@
                         right: 0rem;
                     }
                     a{
-                        font-size: 8rem;
+                        font-size: 8rem !important;
                     }
                     .close_icon{
                         position: absolute;
