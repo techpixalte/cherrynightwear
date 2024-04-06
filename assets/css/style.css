@@ -440,6 +440,7 @@ footer{
 .swiper-button-disabled{
     border: 0.2rem solid #000 !important;
     background: transparent !important;
+    cursor: url('../images/no-entry.webp'),auto !important;
     img{
         filter: invert(0) !important;
     }
