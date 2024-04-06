@@ -37,7 +37,7 @@ header{
     width: 100%;
     z-index: 999;
     .top_nav{
-        background: #d3305e;
+        background: #e3005a;
         padding: 1rem 2.5rem;
         display: flex;
         justify-content: space-around;
@@ -99,11 +99,11 @@ header{
                     margin: 0 auto;
                     width: 0;
                     height: .2rem;
-                    background-color: #d3305e;
+                    background-color: #e3005a;
                     transition: opacity .3s ease,width .3s ease;
                 }
                 &:hover{
-                    color: #d3305e;
+                    color: #e3005a;
                     &::after{
                         width: 100%;
                         opacity: 1;
@@ -214,11 +214,11 @@ header{
                 margin: 0 auto;
                 width: 0;
                 height: .2rem;
-                background-color: #d3305e;
+                background-color: #e3005a;
                 transition: opacity .3s ease,width .3s ease;
             }
             &:hover{
-                color: #d3305e;
+                color: #e3005a;
                 &::after{
                     width: 100%;
                     opacity: 1;
@@ -247,12 +247,20 @@ header{
             top: 50%;
             cursor: pointer;
             z-index: 99;
+            border: 0.2rem solid transparent;
+            background: #e3005a;
+            border-radius: 50%;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img{
-                width: 4.4rem;
+                width: 3.4rem;
+                filter: invert(1);
             }
         }
         .swiper-prev{
-            left: 0;
+            left: -2rem;
             img{
                 transform: rotate(180deg);
             }
@@ -290,14 +298,14 @@ header{
                     padding: 1rem 2rem;
                     display: block;
                     font-size: 2rem;
-                    color: #d3305e;
+                    color: #e3005a;
                     margin-bottom: 2.5rem;
                     &::placeholder{
                         font-size: 2rem;
-                        color: #d3305e;
+                        color: #e3005a;
                     }
                     &:focus-visible{
-                        border-color: #d3305e !important;
+                        border-color: #e3005a !important;
                     }
                 }
                 button{
@@ -311,7 +319,7 @@ header{
                     margin: 0 auto;
                     transition: background 0.3s ease-in;
                     &:hover{
-                        background: #d3305e;
+                        background: #e3005a;
                         color: #fff;
                     }
                 }
@@ -344,7 +352,7 @@ header{
 /* footer */
 
 footer{
-    background: #ff6893;
+    background: #7a0023;
     padding: 5rem 6.5rem;
     color: #fff;
     .footer_box{
@@ -430,8 +438,10 @@ footer{
 
 
 .swiper-button-disabled{
+    border: 0.2rem solid #000 !important;
+    background: transparent !important;
     img{
-        opacity: .3;
+        filter: invert(0) !important;
     }
 }
 
@@ -441,7 +451,7 @@ footer{
 
 h2{
     font-size: 6rem;
-    color: #d3305e;
+    color: #e3005a;
 }
 p{
     font-size: 2.4rem;
