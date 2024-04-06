@@ -342,12 +342,12 @@ var swiper = new Swiper(".innerSwiper", {
 
 $('.menu_icon').click(function(e){
   $('.menu').addClass('active')
-  $('.top_nav').css('display', 'none')
+  $('.top_nav').addClass('active')
 });
 
 $('.menu li').click(function(e){
   $('.menu').removeClass('active')
-  $('.top_nav').css('display', 'flex')
+  $('.top_nav').removeClass('active')
 });
 
 $('.inner_product .swiper-pagination-bullet').click(function(e){
