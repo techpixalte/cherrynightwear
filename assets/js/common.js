@@ -335,15 +335,21 @@ var swiper = new Swiper(".innerSwiper", {
     el: ".swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
+      return '<a href="" class="' + className + '">' + (index + 1) + "</a>";
     },
   },
 });
 
 $('.menu_icon').click(function(e){
   $('.menu').addClass('active')
+  $('.top_nav').css('display', 'none')
 });
 
 $('.menu li').click(function(e){
   $('.menu').removeClass('active')
+  $('.top_nav').css('display', 'flex')
+});
+
+$('.inner_product .swiper-pagination-bullet').click(function(e){
+  location.href = '#embroidery_products';
 });

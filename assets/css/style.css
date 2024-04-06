@@ -155,7 +155,7 @@ header{
 }
 
 .inner_banner{
-    /* padding-top: 13.5rem; */
+    padding-top: 13.5rem;
     img{
         width: 100%;
         display: block;
@@ -371,6 +371,7 @@ header{
 /* inner_pages */
 
 .inner_product{
+    padding-top: 18rem;
     .innerSwiper{
         width: 100%;
         .swiper-wrapper{

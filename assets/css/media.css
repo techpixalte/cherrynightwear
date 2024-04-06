@@ -50,6 +50,15 @@
         .banner{
             padding-top: 15.5rem;
         }
+        header{
+            .header_nav{
+                .menu{
+                    a{
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
         .our_products{
             .product_title{
                 width: 90%;
@@ -66,6 +75,28 @@
                     .product_items{
                         width: 34rem;
                     }
+                }
+            }
+        }
+        .inner_product{
+            .product_page{
+                justify-content: space-between;
+                gap: 6rem;
+            }
+            .product_box{
+                width: 38rem;
+                .series_number{
+                    font-size: 3rem;
+                }
+            }
+            .innerSwiper{
+                .swiper-wrapper{
+                    margin-bottom: 15rem;
+                }
+                .swiper-pagination-bullet{
+                    font-size: 3rem;
+                    width: 6.5rem;
+                    height: 6.5rem;
                 }
             }
         }
@@ -95,9 +126,51 @@
 @media screen and (max-width: 768px) {
     html{
         font-size: 8px;
+        .inner_banner {
+            padding-top: 15.5rem;
+        }
         .hideHeader{
             .header_nav{
                 transform: translateY(-4.8rem);
+            }
+        }
+        .menu_icon{
+            display: block;
+            width: 8rem;
+            padding: 1.5rem;
+            svg{
+                width: 100%;
+            }
+        }
+        .menu{
+            position: absolute;
+            flex-direction: column;
+            background: white;
+            padding: 20rem 10rem 10rem;
+            width: 100%;
+            top: 0;
+            height: 100vh;
+            overflow-y: scroll;
+            right: -100%;
+            justify-content: center;
+            transition: all 0.3s ease-in;
+            z-index: 99;
+            &.active{
+                right: 0rem;
+            }
+            a{
+                font-size: 4rem !important;
+            }
+            .close_icon{
+                position: absolute;
+                display: block;
+                width: 10rem;
+                padding: 2rem;
+                top: 1rem;
+                right: 1rem;
+                svg{
+                    width: 100%;
+                }
             }
         }
         .about_us{
@@ -199,6 +272,7 @@
                     position: absolute;
                     flex-direction: column;
                     background: white;
+                    padding: 20rem 10rem 10rem;
                     width: 100%;
                     top: 0;
                     height: 100vh;
@@ -211,7 +285,7 @@
                         right: 0rem;
                     }
                     a{
-                        font-size: 12rem;
+                        font-size: 8rem;
                     }
                     .close_icon{
                         position: absolute;
@@ -363,15 +437,19 @@
             }
         }
 
+        .inner_banner{
+            padding-top: 0;
+        }
+
         .inner_product{
             .product_page{
-                gap: 3.2rem;
+                gap: 10rem;
             }
             .product_box{
-                width: 43.6rem;
+                width: 100%;
                 .series_number{
-                    font-size: 3.8rem;
-                    padding: 2.5rem 9;
+                    font-size: 5.8rem;
+                    padding: 2.5rem 0;
                 }
             }
             .innerSwiper{
