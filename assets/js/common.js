@@ -327,7 +327,18 @@ document.addEventListener('scroll', e => {
       }
       });
 
+// inner product swiper
 
+var swiper = new Swiper(".innerSwiper", {
+  effect: "fade",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+});
 
 $('.menu_icon').click(function(e){
   $('.menu').addClass('active')

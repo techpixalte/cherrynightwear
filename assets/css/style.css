@@ -109,6 +109,14 @@ header{
                         opacity: 1;
                     }
                 }
+                &.active{
+                    color: #e3005a;
+                    &::after{
+                        width: 100%;
+                        opacity: 1;
+                    }
+                    
+                }
             }
         }
     }
@@ -146,13 +154,23 @@ header{
     }
 }
 
+.inner_banner{
+    /* padding-top: 13.5rem; */
+    img{
+        width: 100%;
+        display: block;
+    }
+}
+
 
 /* about */
 
 .about_us{
     width: 100%;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, rgba(211,48,94,1) 30%);
+    background: linear-gradient(90deg, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 30%, rgba(211,48,94,1) 30%);
     padding: 10rem;
+    /* border-top: .2rem solid #e3005a;
+    border-bottom: .2rem solid #e3005a; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -162,7 +180,7 @@ header{
     .about_img{
         width: 50rem;
         height: 50rem;
-        background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(211,48,94,1) 50%);
+        background: linear-gradient(270deg, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 50%, rgba(211,48,94,1) 50%);
         border-radius: 50%;
         overflow: hidden;
         position: relative;
@@ -349,6 +367,60 @@ header{
 }
 
 
+
+/* inner_pages */
+
+.inner_product{
+    .innerSwiper{
+        width: 100%;
+        .swiper-wrapper{
+            margin-bottom: 10rem;
+        }
+        .inner-pagination{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-pagination-bullet{
+            font-size: 2rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            padding: 2rem;
+            line-height: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000 !important;
+            background: #ccc !important;
+            opacity: 1 !important;
+        }
+        .swiper-pagination-bullet-active{
+            background: #e3005a !important;
+            color: #fff !important;
+        }
+    }
+    .product_page{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6.2rem;
+    }
+    .product_box{
+        width: 40rem;
+        img{
+            width: 100%;
+            display: block;
+        }
+        .series_number{
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #e3005a;
+            color: #fff;
+        }
+    }
+}
+
 /* footer */
 
 footer{
@@ -446,8 +518,10 @@ footer{
     }
 }
 
-.swiper-pagination-bullet{
-    background: #fff !important;
+.banner{
+    .swiper-pagination-bullet{
+        background: #fff !important;
+    }
 }
 
 h2{

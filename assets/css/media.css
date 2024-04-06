@@ -202,6 +202,7 @@
                     width: 100%;
                     top: 0;
                     height: 100vh;
+                    overflow-y: scroll;
                     right: -100%;
                     justify-content: center;
                     transition: all 0.3s ease-in;
@@ -361,6 +362,30 @@
                 font-size: 4rem;
             }
         }
+
+        .inner_product{
+            .product_page{
+                gap: 3.2rem;
+            }
+            .product_box{
+                width: 43.6rem;
+                .series_number{
+                    font-size: 3.8rem;
+                    padding: 2.5rem 9;
+                }
+            }
+            .innerSwiper{
+                .swiper-wrapper {
+                    margin-bottom: 15rem;
+                }
+                .swiper-pagination-bullet{
+                    font-size: 4rem;
+                    width: 6.5rem;
+                    height: 6.5rem;
+                }
+            }
+        }
+
     }
 }
 
