@@ -359,5 +359,5 @@ $('.menu li').click(function(e){
 });
 
 $('.inner_product .swiper-pagination-bullet').click(function(e){
-  location.href = '#embroidery_products';
+  location.href = '#';
 });
