@@ -328,17 +328,24 @@ document.addEventListener('scroll', e => {
       });
 
 // inner product swiper
+if ('.product_page'.length > 1) {
+  activateSwiper();
+}
 
-var swiper = new Swiper(".innerSwiper", {
-  effect: "fade",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<a href="" class="' + className + '">' + (index + 1) + "</a>";
+function activateSwiper() {
+  var swiper = new Swiper(".innerSwiper", {
+    effect: "fade",
+    simulateTouch: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<a href="" class="' + className + '">' + (index + 1) + "</a>";
+      },
     },
-  },
-});
+  });
+}
+
 
 $('.menu_icon').click(function(e){
   $('.menu').addClass('active')
@@ -348,6 +355,7 @@ $('.menu_icon').click(function(e){
 $('.menu li').click(function(e){
   $('.menu').removeClass('active')
   $('.top_nav').removeClass('active')
+  $('body').removeClass('hideHeader')
 });
 
 $('.inner_product .swiper-pagination-bullet').click(function(e){
