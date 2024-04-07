@@ -133,7 +133,7 @@ header{
         animation: slideUp 500ms ease;
     }
     .header_nav{
-        transform: translateY(-4.9rem);
+        transform: translateY(-4.99rem);
         transition: transform 0.25s ease-in;
     }
 }
