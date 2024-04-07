@@ -416,7 +416,9 @@ header{
             font-size: 1.8rem;
             text-align: center;
             padding: 1.5rem 0;
-            background: #e3005a;
+            background: url('../images/ribbon.webp') no-repeat;
+            background-size: 100%;
+            background-position: 50% 50% ;
             color: #fff;
         }
     }
