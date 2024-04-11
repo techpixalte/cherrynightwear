@@ -16,6 +16,11 @@
         .banner{
             padding-top: 14.5rem;
         }
+        .about_us{
+            .about_img{
+                left: -27rem;
+            }
+        }
     }
 }
 
@@ -35,6 +40,11 @@
         font-size: 41.6%;
         .hideHeader .header_nav{
             transform: translateY(-5.4rem);
+        }
+        .about_us{
+            .about_img{
+                left: -24.5rem;
+            }
         }
     }
 }
