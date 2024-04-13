@@ -91,7 +91,7 @@ header{
             gap: 3rem;
             a{
                 font-size: 2.2rem;
-                color: rgb(175, 175, 175);
+                color: #000;
                 position: relative;
                 &:after {
                     content: "";
@@ -315,7 +315,7 @@ header{
                         font-size: 2rem;
                         color: #e3005a;
                     }
-                    &:focus-visible{
+                    &:focus-visible, &:valid{
                         border-color: #e3005a !important;
                     }
                 }
@@ -359,6 +359,17 @@ header{
     }
 }
 
+
+/* location */
+
+.location{
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(81deg, rgba(255,0,112,1) 0%, rgba(255,97,97,1) 100%);
+    iframe{
+        width: 100%;
+    }
+}
 
 
 /* inner_pages */
