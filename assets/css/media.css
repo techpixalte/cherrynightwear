@@ -21,6 +21,11 @@
                 left: -27rem;
             }
         }
+        .inner_product{
+            .product_box{
+                width: 40rem;
+            }
+        }
     }
 }
 
@@ -325,7 +330,8 @@
                 height: 50rem;
                 left: -2rem;
                 top: -13rem;
-                background: linear-gradient(0deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 50%, rgba(211,48,94,1) 50%);
+                background: #fff;
+                padding: 2.5rem 2.5rem 0;
             }
             .div_content{
                 width: 100%;
