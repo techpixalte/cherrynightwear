@@ -102,8 +102,20 @@ header{
                     background-color: #e3005a;
                     transition: opacity .3s ease,width .3s ease;
                 }
+                span{
+                    display: contents;
+                    img{
+                        width: 2rem;
+                        transition: all 0.3s ease-in;
+                    }
+                }
                 &:hover{
                     color: #e3005a;
+                    span{
+                        img{
+                            transform: rotate(180deg);
+                        }
+                    }
                     &::after{
                         width: 100%;
                         opacity: 1;
@@ -116,6 +128,49 @@ header{
                         opacity: 1;
                     }
                     
+                }
+            }
+            li{
+                position: relative;
+                overflow: hidden;
+                transition: all 0.3s ease-in;
+                &>a{
+                    padding-bottom: 1rem;
+                }
+                .inner_menu{
+                    width: 20rem;
+                    position: absolute;
+                    top: 1.8rem;
+                    left: -5rem;
+                    padding-top: 4rem;
+                    text-align: center;
+                    li{
+                        background: #fff;
+                        padding: 1.5rem 1.5rem 0 ;
+                        a{
+                            transition: all 0.3s ease-in;
+                            width: 100%;
+                            font-size: 2rem;
+                            color: rgba(0,0,0,0.9);
+                            padding-bottom: 1.5rem;
+                            border-bottom: 1px solid rgba(0,0,0,0.9);
+                            display: block;
+                            &:hover{
+                                color: #e3005a;
+                            }
+                            &::after{
+                                display: none;
+                            }
+                        }
+                        &:nth-last-child(1){
+                            a{
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    overflow: visible;
                 }
             }
         }
@@ -491,22 +546,14 @@ footer{
         font-size: 2rem;
         text-align: center;
         a{
-            color: #fff;
-            position: relative;
-            display: inline-block;
-            &:after {
-                content: "";
-                display: block;
-                margin: 0 auto;
-                width: 0;
-                height: .2rem;
-                background-color: #fff;
-                transition: opacity .3s ease,width .3s ease;
+            img{
+                width: 15.8rem;
+                margin-left: 2rem;
+                transition: all 0.3s ease-in;
             }
             &:hover{
-                &::after{
-                    width: 100%;
-                    opacity: 1;
+                img{
+                    opacity: .8;
                 }
             }
         }
