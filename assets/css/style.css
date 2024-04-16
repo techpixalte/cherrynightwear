@@ -467,7 +467,7 @@ header{
         gap: 6.2rem;
     }
     .product_box{
-        width: 39rem;
+        width: 40rem;
         img{
             width: 100%;
             display: block;
@@ -544,11 +544,11 @@ footer{
         }
     }
     .web_creator{
-        font-size: 2rem;
+        font-size: 1.4rem;
         text-align: center;
         a{
             img{
-                width: 15.8rem;
+                width: 10rem;
                 margin-left: 2rem;
                 transition: all 0.3s ease-in;
             }

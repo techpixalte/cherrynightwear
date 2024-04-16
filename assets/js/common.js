@@ -350,12 +350,13 @@ function activateSwiper() {
 $('.menu_icon').click(function(e){
   $('.menu').addClass('active')
   $('.top_nav').addClass('active')
+  $('body').addClass('showHeader')
 });
 
 $('.menu li').click(function(e){
   $('.menu').removeClass('active')
   $('.top_nav').removeClass('active')
-  $('body').removeClass('hideHeader')
+  $('body').removeClass('showHeader')
 });
 
 $('.inner_product .swiper-pagination-bullet').click(function(e){
