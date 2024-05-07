@@ -548,8 +548,8 @@ footer{
         text-align: center;
         a{
             img{
-                width: 10rem;
-                margin-left: 2rem;
+                width: 7rem;
+                margin-left: 1rem;
                 transition: all 0.3s ease-in;
             }
             &:hover{
