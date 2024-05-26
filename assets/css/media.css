@@ -319,7 +319,7 @@
         }
         picture{
             img{
-                height: 70vh;
+                height: 100%;
             }
         }
         .menu_icon{
