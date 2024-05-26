@@ -317,6 +317,11 @@
         .wrapper {
             padding-top: 18.5rem;
         }
+        picture{
+            img{
+                height: 100%;
+            }
+        }
         .menu_icon{
             display: block;
             width: 12rem;
