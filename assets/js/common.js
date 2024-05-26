@@ -336,6 +336,8 @@ function activateSwiper() {
   var swiper = new Swiper(".innerSwiper", {
     effect: "fade",
     simulateTouch: false,
+    allowTouchMove: false,
+    simulateTouch: false,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
