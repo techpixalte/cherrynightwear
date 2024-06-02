@@ -50,9 +50,7 @@ document.addEventListener('scroll', e => {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          850:{
-            slidesPerView: 4,
-          },
+          
           1024: {
             slidesPerView: 4,
             spaceBetween: 10,
@@ -83,9 +81,7 @@ document.addEventListener('scroll', e => {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          850:{
-            slidesPerView: 4,
-          },
+          
           1024: {
             slidesPerView: 4,
             spaceBetween: 10,
@@ -115,9 +111,6 @@ document.addEventListener('scroll', e => {
           820: {
             slidesPerView: 3,
             spaceBetween: 10,
-          },
-          850:{
-            slidesPerView: 4,
           },
           1024: {
             slidesPerView: 4,
@@ -181,9 +174,7 @@ document.addEventListener('scroll', e => {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          850:{
-            slidesPerView: 4,
-          },
+          
           1024: {
             slidesPerView: 4,
             spaceBetween: 10,
@@ -214,9 +205,7 @@ document.addEventListener('scroll', e => {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          850:{
-            slidesPerView: 4,
-          },
+          
           1024: {
             slidesPerView: 4,
             spaceBetween: 10,
@@ -247,9 +236,7 @@ document.addEventListener('scroll', e => {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          850:{
-            slidesPerView: 4,
-          },
+          
           1024: {
             slidesPerView: 4,
             spaceBetween: 10,
@@ -280,9 +267,7 @@ document.addEventListener('scroll', e => {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          850:{
-            slidesPerView: 4,
-          },
+          
           1024: {
             slidesPerView: 4,
             spaceBetween: 10,
@@ -313,9 +298,7 @@ document.addEventListener('scroll', e => {
             slidesPerView: 3,
             spaceBetween: 10,
           },
-          850:{
-            slidesPerView: 4,
-          },
+          
           1024: {
             slidesPerView: 4,
             spaceBetween: 10,
