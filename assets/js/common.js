@@ -345,5 +345,5 @@ $('.menu li').click(function(e){
 });
 
 $('.inner_product .swiper-pagination-bullet').click(function(e){
-  location.href = '#';
+  location.href = '#products';
 });
