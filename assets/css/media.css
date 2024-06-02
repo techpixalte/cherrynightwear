@@ -393,7 +393,7 @@
             }
         }
         .about_us{
-            background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 33%, rgba(211,48,94,1) 33%);
+            background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 20%, rgba(211,48,94,1) 20%);
             flex-direction: column;
             padding-top: 34rem;
             .about_img {
@@ -401,7 +401,8 @@
                 height: 50rem;
                 left: -2rem;
                 top: -13rem;
-                background: #fff;
+                background: #d3305e;
+                border: 1rem solid #fff;
                 padding: 2.5rem 2.5rem 0;
             }
             .div_content{

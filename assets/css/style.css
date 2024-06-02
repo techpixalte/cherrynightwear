@@ -230,7 +230,8 @@ header{
     .about_img{
         width: 50rem;
         height: 50rem;
-        background: #fff;
+        background: #d3305e;
+        border: 1rem solid #fff;
         border-radius: 50%;
         overflow: hidden;
         position: relative;
