@@ -260,7 +260,7 @@ header{
 
 .our_products{
     margin: 0rem 6.5rem 5rem;
-    padding-top: 15rem;
+    padding-top: 10rem;
     h2{
         margin-bottom: 6rem;
         text-align: center;
@@ -436,7 +436,7 @@ header{
 /* inner_pages */
 
 .inner_product{
-    padding-top: 18rem;
+    padding-top: 10rem;
     .innerSwiper{
         width: 100%;
         .swiper-wrapper{

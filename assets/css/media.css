@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 1280px) {
     html{
-        font-size: 41.7%;
+        font-size: 41.18%;
         .hideHeader .header_nav{
             transform: translateY(-5.4rem);
         }
