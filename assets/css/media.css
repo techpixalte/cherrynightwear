@@ -570,7 +570,23 @@
                 }
             }
         }
-
+        .pagination{
+            text-align: center;
+            font-size: 5rem;
+            .current{
+                margin: 0 3rem;
+                .span_letter{
+                    font-size: 4.1rem;
+                    margin-right: .5rem;
+                }
+            }
+            .step-links{
+                a{
+                    font-size: 3rem;
+                    padding: 1.5rem 2.5rem;
+                }
+            }
+        }
     }
 }
 
