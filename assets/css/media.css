@@ -113,11 +113,11 @@
             .product_page{
                 justify-content: space-between;
                 gap: 6rem;
-            }
-            .product_box{
-                width: 38rem;
-                .series_number{
-                    font-size: 3rem;
+                .product_box{
+                    width: 38rem;
+                    .series_number{
+                        font-size: 3rem;
+                    }
                 }
             }
             .innerSwiper{
@@ -551,12 +551,12 @@
         .inner_product{
             .product_page{
                 gap: 10rem;
-            }
-            .product_box{
-                width: 100%;
-                .series_number{
-                    font-size: 5.8rem;
-                    padding: 2.5rem 0;
+                .product_box{
+                    width: 100%;
+                    .series_number{
+                        font-size: 5.8rem;
+                        padding: 2.5rem 0;
+                    }
                 }
             }
             .innerSwiper{
@@ -584,6 +584,25 @@
                 a{
                     font-size: 3rem;
                     padding: 1.5rem 2.5rem;
+                }
+            }
+        }
+
+        #form_popup{
+            border-radius: 1rem;
+            padding: 2rem 2rem;
+            padding-top: 3rem;
+            width: 90%;
+            &::before{
+                height: 1rem;
+            }
+            .popup_container{
+                gap: 3rem;
+                img{
+                    width: 10rem;
+                }
+                .popup_text{
+                    font-size: 4.3rem;
                 }
             }
         }

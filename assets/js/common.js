@@ -347,3 +347,15 @@ $('.menu li').click(function(e){
 $('.inner_product .swiper-pagination-bullet').click(function(e){
   location.href = '#products';
 });
+
+$('.form_submit').click(function(e) {
+  $('#form_popup').show();
+  
+  setTimeout(() => {
+    $('.close_popup').trigger('click');
+  }, 8000);
+});
+
+$('.close_popup').click(function(e) {
+  $('#form_popup').hide();
+});
